@@ -43,7 +43,10 @@ public class GameProgress implements Serializable {
       }
     }
     zout.close();
+  }
 
+  public static void removeSaves(String[] saves) {
+    File save;
     for (String s : saves) {
       save = new File(s);
       try {

@@ -14,5 +14,6 @@ public class Main {
 
     String[] saveList = {SAVEGAME_PATH + "save1.dat", SAVEGAME_PATH + "save2.dat", SAVEGAME_PATH + "save3.dat"};
     GameProgress.zipFiles(SAVEGAME_PATH + "zip.zip", saveList);
+    GameProgress.removeSaves(saveList);
   }
 }
